@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <script type="text/javascript" src="jquery.fullPage.js"></script>
+
+
+
+</head>
+
+<body>
+        <div class="back">
+                <h1 id="title">Bartosz<br>Mazurek</h1> 
+        </div>
+  
+    
+                    <div id="fullpage">
+
+                        <div class="section">
+                                <div class="blank"></div>
+                        </div>
+
+                            
+
+                        <div class="section sidebar" style="background: white; width: 50vw;float: right;">
+                                <div class="info"> <span style="font-size: 50px;color: #752424">Cześć</span>, <span style="font-size:30px;">nazywam się Bartek.</span> <br>
+                                </div>
+                        </div>
+
+                        <div class="section">
+                                <div class="projekty"></div>
+                        </div>
+
+                        <div class="section fp-auto-height">
+                                <div class="kontakt"></div>
+                        </div>
+
+
+                    </div>
+    
+
+      
+<script>
+$('#fullpage').fullpage({
+	onLeave: function(index, nextIndex, direction){
+		var leavingSection = $(this);
+
+		//after leaving section 2
+		if(index == 1 && direction =='down'){
+            $("body").addClass("changeColor");
+            $(".back h1").addClass("changeColortext");
+            
+		}
+
+		else if(index == 2 && direction == 'up'){
+            $("body").removeClass("changeColor");
+            $(".back h1").removeClass("changeColortext");
+		}
+	}
+});
+    $(document).ready(function() {
+	$('#fullpage').fullpage();
+});
+
+</script>
+     
+     </body>
+
+
+
+</html>
