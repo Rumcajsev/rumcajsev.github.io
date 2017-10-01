@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #B63E3E;
+    transition: 1s all;
+}
+
+.blank{
+    height: 100vh;
+}
+
+.projekty{
+    height: 100vh;
+    width: 50vw;
+    float: left;
+    background: #854343;
+    z-index: 20;
+    position: relative;
+
+}
+
+.kontakt{
+    height: 15vh;
+    width: 100vw;
+    float: left;
+    background: #B63E3E;
+    z-index: 20;
+    position: relative;
+
+}
+
+
+.changeColor {
+    background: #858585;
+
+ }
+
+.movetext{
+    margin-left:-25vw;
+    text-align: left;
+}
+
+
+ .back{
+    position: fixed;
+    width: 100vw;
+    height:100vh;
+    z-index: -1;
+    transition: 2s all;
+    margin-top: 40vh;
+    text-align: center;
+    font-size: 40px;
+    color: #B9B9B9;
+    font-family: 'Rubik', sans-serif;
+  
+}
+
+ .changeColortext {
+    color: #752424;
+ }
+
+
+.sidebar{
+    background: #E0E0E0;
+    width: 50vw;
+    height:100%;
+    float: right;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+}
+
+.info{
+    height: 80vh;
+    margin: 10vh;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+
+}
+
+
+
+
