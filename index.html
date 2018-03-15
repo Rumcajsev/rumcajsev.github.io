@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
     <script type="text/javascript" src="jquery.fullPage.js"></script>
-    <script src="https://use.fontawesome.com/2feee19bc3.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
 
 
 
@@ -18,14 +20,17 @@
 </head>
 
 <body>
+        <div class="back_grad"></div>
         <div class="back">
-                <h1 id="title">Bartosz<br>Mazurek</h1> 
-              <div class="icons">  
-                        <a href="https://www.w3schools.com">    <i class="fa fa-envelope" aria-hidden="true"></i></a>
-                        <a href="https://www.w3schools.com">  <i class="fa fa-linkedin-square" aria-hidden="true"></i> </a>
-                       
-
-              </div>
+                
+                        <h1 id="title">Bartosz<br>Mazurek</h1> 
+                <div class="icons">  
+                                <a href="mailto:bmazurek@student.agh.edu.pl">    <i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                <a href="https://www.linkedin.com/in/bartosz-mazurek-7a865a155/">  <i class="fa fab fa-linkedin" aria-hidden="true"></i> </a>
+                                <a href="mailto:bmazurek@student.agh.edu.pl">    <i class="fab fa-github" aria-hidden="true"></i></a>
+                                <a href="mailto:bmazurek@student.agh.edu.pl">    <i class="fas fa-file-alt" aria-hidden="true"></i></a>
+                </div>
+                
 
         </div>
   
@@ -39,7 +44,7 @@
                             
 
                         <div class="section sidebar" style="background: rgb(231, 231, 231); ">
-                                <div class="info"> <span style="font-size: 50px;color: #752424">Cześć</span>, <span style="font-size:30px;">nazywam się Bartek.</span> <br>
+                                <div class="info"> <span style="font-size: 50px;color: #E73C7E">Cześć</span>, <span style="font-size:30px;">nazywam się Bartek.</span> <br>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam velit mi, vestibulum quis sagittis et, tincidunt quis sapien. Donec vitae mi viverra justo mollis congue. Etiam a urna id felis faucibus luctus. Vestibulum sed efficitur urna. Nullam consectetur hendrerit odio. Sed eu ligula congue, tempor sem quis, dictum velit. Phasellus congue mattis est ut accumsan. Nam rutrum vehicula lacus ac fermentum. Cras egestas tortor a turpis congue fringilla. Etiam interdum aliquam augue. Integer id eleifend quam. Nunc tellus libero, finibus ut condimentum a, porta ac nisi. Pellentesque vitae tortor eu ipsum ultricies luctus sed vitae ipsum. Vivamus consequat eget quam nec vehicula. Morbi convallis libero ut sollicitudin hendrerit. In interdum augue nisl. 
 
                                         </p>
@@ -49,7 +54,7 @@
                         </div>
 
                         <div class="section sidebar" style="background: rgb(231, 231, 231); ">
-                                        <div class="info"> <span style="font-size: 50px;color: #752424">Moje projekty</span><br>
+                                        <div class="info"> <span style="font-size: 50px;color: #E73C7E">Moje projekty</span><br>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam velit mi, vestibulum quis sagittis et, tincidunt quis sapien. Donec vitae mi viverra justo mollis congue. Etiam a urna id felis faucibus luctus. Vestibulum sed efficitur urna. Nullam consectetur hendrerit odio. Sed eu ligula congue, tempor sem quis, dictum velit. Phasellus congue mattis est ut accumsan. Nam rutrum vehicula lacus ac fermentum. Cras egestas tortor a turpis congue fringilla. Etiam interdum aliquam augue. Integer id eleifend quam. Nunc tellus libero, finibus ut condimentum a, porta ac nisi. Pellentesque vitae tortor eu ipsum ultricies luctus sed vitae ipsum. Vivamus consequat eget quam nec vehicula. Morbi convallis libero ut sollicitudin hendrerit. In interdum augue nisl. 
         
                                                 </p>
@@ -69,12 +74,13 @@
 <script>
         
 $('#fullpage').fullpage({
+        navigation: true,
 	onLeave: function(index, nextIndex, direction){
 		var leavingSection = $(this);
 
 		//after leaving section 2
 		if(index == 1 && direction =='down'){
-            $("body").addClass("changeColor");
+            $(".back_grad").addClass("changeColor");
             $(".back").addClass("movetext");
             $(".back h1").addClass("changeColortext");
             $(".back icons").addClass("changeColortext");
@@ -82,7 +88,7 @@ $('#fullpage').fullpage({
 		}
 
 		else if(index == 2 && direction == 'up'){
-            $("body").removeClass("changeColor");
+            $(".back_grad").removeClass("changeColor");
             $(".back").removeClass("movetext");
             $(".back h1").removeClass("changeColortext");
             $(".back icons").removeClass("changeColortext");
