@@ -86,17 +86,17 @@ body{
     grid-area: title;
     height: auto;
     font-size: 70px;
-    font-family: 'roboto', serif;
+    font-family: 'Barlow Condensed', sans-serif;
     margin-bottom: 40px;
     border-bottom: 3px solid;
-    font-weight: 100;
+    font-weight: 300;
 }
-
+/*/
 #title.permahover{
     font-weight: 700;
     transition: 0.5s;
 }
-
+/*/
 #title.yellow{
     text-shadow: 1px 1px 0px #ffb74d, 2px 2px 0px #ffb74d, 3px 3px 0px #ffb74d !important;
 }
@@ -190,21 +190,21 @@ body{
 .nazwa{
     float: left;
     font-size: 1.5em;
-    font-family: 'Lora', serif;
+    font-family: 'Barlow Condensed', sans-serif;
     display: inline;
 }
 
 .pozycja{
     font-size: 1.2em;
-    font-family: 'Lora', serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-style: italic;
 }
 
 .data{
     float: right;
     font-size: 1em;
-    font-family: 'Lora', serif;
-    font-style: italic;
+    font-family: 'Barlow Condensed', sans-serif;
+    /*/font-style: italic;/*/
     display: inline;
 }
 
@@ -250,7 +250,7 @@ body{
 
 .back{
     font-size: 16px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Barlow', sans-serif;
     line-height: 1.5;
     padding: 15px;
     text-align: justify;
@@ -284,16 +284,16 @@ body{
     background: #9ccc65;
 }
 #kontakt.permahover{
-    background: #757de8;
+    background: #8f2d56;
 }
 #skills.permahover{
-    background: #26a69a;
+    background: #577590;
 }
 #praca.permahover{
     background: #ffb74d;
 }
 #edukacja.permahover{
-    background: #e57373;
+    background: #afd2e9;
 }
 .li.permahover{
     background: #e57373;
@@ -302,7 +302,7 @@ body{
 
 .heading{
     font-size: 30px;
-    font-family: 'Lora', serif;
+    font-family: 'Barlow Condensed', sans-serif;
     display:block;
     text-align: center;
 
