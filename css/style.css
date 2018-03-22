@@ -22,10 +22,11 @@ body{
 
 .grid_L{
     display: grid;
-    grid-template-rows: min-content min-content;
+    grid-template-rows: min-content min-content min-content;
     grid-gap: inherit;
     grid-template-areas:
     "info"
+    "skills"
     "kontakt";
 }
 
@@ -35,8 +36,62 @@ body{
     grid-template-rows: min-content min-content;
     grid-gap: inherit;
     grid-template-areas:
+    "praca"   
     "edukacja"
-    "praca"
+}
+
+.grid_kontakt{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 60px 60px 60px 60px;
+    grid-template-rows: 60px 60px;
+    grid-auto-flow: row;
+    justify-content: space-between;
+}
+
+.button{
+ /*/outline: 3px solid black;
+ outline-offset: -3px;/*/
+ width: 60px;
+ text-align: center;
+ vertical-align: middle;
+ line-height: 60px; 
+ font-size: 2em;
+ /*/outline: 3px solid black;
+ outline-offset: -3px;/*/
+}
+
+.button.mail{
+   /*/ outline: 3px solid black;
+    outline-offset: -3px;/*/
+    grid-column: 1/5;
+    grid-row: 1;  
+    font-size: 15px;
+    width: 100%;
+}
+
+.button.mail:hover{
+    color: #757de8;
+    background: #757de8;
+}
+
+.button.permahover{
+   /*/ outline: 3px solid #002984;
+    color: #002984;/*/
+}
+
+
+.button:hover{
+    color: #757de8;
+    background: black;
+    transition: all 0.2s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.button.permahover:hover{
+    color: #757de8;
+    background: #002984;
+    transition: all 0.2s;
 }
 
 .title{
@@ -46,7 +101,27 @@ body{
     font-family: 'Lora', serif;
     margin-bottom: 40px;
     border-bottom: 3px solid;
-    
+}
+
+.area{
+    width: 1fr;
+    padding: 10px;
+    transition: all 0.2s;
+    margin-top:10px;
+}
+
+.area:hover{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#edukacja .area:hover{
+    background: #af4448;
+    transition: background 0.5s;
+}
+
+#praca .area:hover{
+    background: #c88719;
+    transition: background 0.5s;
 }
 
 #kontakt{
@@ -55,8 +130,6 @@ body{
 
 #info{
     grid-area: info;
-    
-    
 }
 
 #edukacja{
@@ -67,6 +140,10 @@ body{
     grid-area: praca;
 }
 
+#skills{
+    grid-area: skills;
+}
+
 .back{
    /*/ border: 2px solid;  /*/ 
     font-size: 16px;
@@ -75,15 +152,17 @@ body{
     padding: 15px;
     text-align: justify;
     transition: background 0.5s;
-}
+    align-self: start;
 
+}
+/*/
 #info:hover{
-    outline: 5px solid #6b9b37;
+    outline: 5px solid #9ccc65;
     outline-offset: -5px;
     transition: background 0.5s;
 }
 #kontakt:hover{
-    outline: 5px solid #1976d2;
+    outline: 5px solid #757de8;
     outline-offset: -5px;
     transition: background 0.5s;
 }
@@ -97,6 +176,7 @@ body{
     outline-offset: -5px;
     transition: background 0.5s;
 }
+/*/
 
 #info.permahover{
     background: #9ccc65;
@@ -104,44 +184,75 @@ body{
 #kontakt.permahover{
     background: #757de8;
 }
+#skills.permahover{
+    background: #26a69a;
+}
 #praca.permahover{
-    background: #ffd54f;
+    background: #ffb74d;
 }
 #edukacja.permahover{
-    background: #ff867c;
+    background: #e57373;
 }
+
 
 .heading{
     font-size: 30px;
     font-family: 'Lora', serif;
     display:block;
+    text-align: center;
+
 }
 
-#info::selection {
+.title::selection {
+    background: #9ccc65; /* WebKit/Blink Browsers */
+}
+.title::-moz-selection {
+    background: #9ccc65; /* Gecko Browsers */
+}
+#info *::selection {
     background: #6b9b37; /* WebKit/Blink Browsers */
 }
-#info::-moz-selection {
+#info *::-moz-selection {
     background: #6b9b37; /* Gecko Browsers */
 }
-#kontakt::selection {
+#kontakt *::selection {
     background: #fff2a8; /* WebKit/Blink Browsers */
 }
-#kontakt::-moz-selection {
+#kontakt *::-moz-selection {
     background: #fff2a8; /* Gecko Browsers */
 }
-#praca::selection {
-    background: #ffff81; /* WebKit/Blink Browsers */
+#praca *::selection {
+    background: #ffffff4b; /* WebKit/Blink Browsers */
 }
-#praca::-moz-selection {
-    background: #ffff81; /* Gecko Browsers */
+#praca *::-moz-selection {
+    background: #ffffff4b; /* Gecko Browsers */
 }
-#edukacja::selection {
-    background: #fff2a8; /* WebKit/Blink Browsers */
+#edukacja *::selection {
+    background: #ffffff4b; /* WebKit/Blink Browsers */
 }
-#edukacja::-moz-selection {
-    background: #fff2a8; /* Gecko Browsers */
+#edukacja *::-moz-selection {
+    background: #ffffff4b; /* Gecko Browsers */
 }
-  
+
+ul{
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 800px;
+}  
+
+ul li{
+    display: inline-block;
+    margin: 7px;
+    padding: 5px 10px;
+    list-style: none;
+    background: grey;
+}
+
+ul li:hover{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
 
 
 
@@ -158,9 +269,10 @@ body{
 
     .grid_L{
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: auto auto;
         grid-template-areas:
-            "info kontakt";
+            "info kontakt"
+            "skills skills";
     }
 
     .grid_R{
@@ -186,15 +298,16 @@ body{
 
     .grid_L{
         grid-template-columns: auto;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: min-content min-content min-content;
         grid-template-areas:
             "info"
-            "kontakt";
+            "kontakt"
+            "skills";
     }
 
     .grid_R{
         grid-template-columns: 100%;
-        grid-template-rows: 400px 400px;
+        grid-template-rows: min-content min-content;
         grid-template-areas:
             "praca"
             "edukacja";
