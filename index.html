@@ -7,18 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bartosz Mazurek</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700|Raleway" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-
-
-
 
 </head>
 
 <body>
     <div class="main_grid">
-        <div class="title">Bartosz Mazurek</div>
+        <div id="title"><span>B</span><span>a</span><span>r</span><span>t</span><span>o</span><span>s</span><span>z</span><span> </span><span>M</span><span>a</span><span>z</span><span>u</span><span>r</span><span>e</span><span>k</span></div>
         <div class="grid_L">
             <div id="info" class="back">
                     <span class="heading">Cześć,</span><br>
@@ -70,44 +67,44 @@
             <div id="edukacja" class="back">
                     <span class="heading">Edukacja</span>
                    <div class="area">
-                        <span style="float: left">NAZWA SZKOŁY</span> <span style="float: right">2017-2018</span><br>
-                        Pozycja<br>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et aliquet est, a tincidunt metus. Pellentesque
-            sit amet hendrerit velit. Curabitur sodales fermentum arcu, et facilisis ligula aliquam et. Vivamus commodo
-            eros sit amet euismod placerat.
+                        <span class="nazwa">Akademia Górniczo-Hutnicza w Krakowie</span> <span class="data">2018-Obecnie</span><br>
+                            <p> <span class="pozycja">Wydział Inżynierii Mechanicznej i Robotyki</span></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et aliquet est, a tincidunt metus. Pellentesque
+                            sit amet hendrerit velit.</p>
                    </div>
                    <div class="area">
-                        <span style="float: left">NAZWA SZKOŁY</span> <span style="float: right">2017-2018</span><br>
-                        Pozycja<br>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et aliquet est, a tincidunt metus. Pellentesque
-            sit amet hendrerit velit. Curabitur sodales fermentum arcu, et facilisis ligula aliquam et. Vivamus commodo
-            eros sit amet euismod placerat.
-                   </div>
+                        <span class="nazwa">I Liceum Ogólnokształcące w Zamościu</span> <span class="data">2017-2018</span><br>
+                            <p> <span class="pozycja">Product Owner</span></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et aliquet est, a tincidunt metus. Pellentesque
+                            sit amet hendrerit velit.</p>
             </div>
-
+</div>
             <div id="praca" class="back">
                     <span class="heading">Doświadczenie</span>
                     <div class="area">
-                            <span style="float: left">NAZWA FIRMY</span> <span style="float: right">2017-2018</span><br>
-                            Pozycja<br>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et aliquet est, a tincidunt metus. Pellentesque
-                sit amet hendrerit velit.
+                            <span class="nazwa">Fideltronik Polska</span> <span class="data">2018-Obecnie</span><br>
+                            <p> <span class="pozycja">Stażysta Automatyk</span></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et aliquet est, a tincidunt metus. Pellentesque
+                            sit amet hendrerit velit.</p>
                        </div>
                        <div class="area">
-                            <span style="float: left">NAZWA FIRMY</span> <span style="float: right">2017-2018</span><br>
-                            Pozycja<br>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et aliquet est, a tincidunt metus. Pellentesque
-                sit amet hendrerit velit. Curabitur sodales fermentum arcu, et facilisis ligula aliquam et. Vivamus commodo
-                eros sit amet euismod placerat.
+                            <span class="nazwa">Jaksiemasz.care</span> <span class="data">2018-Obecnie</span><br>
+                            <p> <span class="pozycja">Product Owner</span></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et aliquet est, a tincidunt metus. Pellentesque
+                            sit amet hendrerit velit..</p>
                        </div>
                        <div class="area">
-                            <span style="float: left">NAZWA FIRMY</span> <span style="float: right">2017-2018</span><br>
-                            Pozycja<br>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et aliquet est, a tincidunt metus. Pellentesque
-                sit amet hendrerit velit.
+                            <span class="nazwa">Delphi Polska</span> <span class="data">2017-2018</span><br>
+                            <p> <span class="pozycja">Koordynator DFMEA</span></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et aliquet est, a tincidunt metus. Pellentesque
+                            sit amet hendrerit velit.</p>
                        </div>
-
-            </div>
+                       <div class="area">
+                            <span class="nazwa">Fideltronik Polska</span> <span class="data">2015-2016</span><br>
+                            <p> <span class="pozycja">Stażysta</span></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et aliquet est, a tincidunt metus. Pellentesque
+                            sit amet hendrerit velit.</p>
+                       </div>
         </div>
 
 
@@ -116,30 +113,73 @@
     </div>
 </body>
 
+
 <script>
+
 $("#info").one("mouseover", function() {
   $("#info").addClass('permahover');
+  $("#title").addClass('permahover');
 });
 
 $("#kontakt").one("mouseover", function() {
   $("#kontakt").addClass('permahover');
   $(".button").addClass('permahover');
+  $("#title").addClass('permahover');
 });
 
 $("#skills").one("mouseover", function() {
   $("#skills").addClass('permahover');
-  $(".li").addClass('permahover');
+  $("#title").addClass('permahover');
 });
 
 $("#praca").one("mouseover", function() {
   $("#praca").addClass('permahover');
+  $("#title").addClass('permahover');
 });
 
 $("#edukacja").one("mouseover", function() {
   $("#edukacja").addClass('permahover');
+  $("#title").addClass('permahover');
 });
 
+$("#title").one("mouseover", function() {
+  $("#title").addClass('permahover');
+});
 
+$("#info").hover(
+    function() {
+  $("#title").addClass('green');},
+  function () {
+    $("#title").removeClass('green');}
+  );
+
+$("#skills").hover(
+    function() {
+  $("#title").addClass('magenta');},
+  function () {
+    $("#title").removeClass('magenta');}
+  );
+
+$("#kontakt").hover(
+    function() {
+  $("#title").addClass('blue');},
+  function () {
+    $("#title").removeClass('blue');}
+  );
+
+$("#praca").hover(
+    function() {
+  $("#title").addClass('yellow');},
+  function () {
+    $("#title").removeClass('yellow');}
+  );
+
+$("#edukacja").hover(
+    function() {
+  $("#title").addClass('red');},
+  function () {
+    $("#title").removeClass('red');}
+  );
 
 </script>
 
