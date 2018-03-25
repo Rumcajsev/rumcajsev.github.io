@@ -2,6 +2,10 @@ body{
     margin: 0px;
     padding: 0px;
     background: #eeeeee;
+    color: #0e0e0e;
+    font-size: 17px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    line-height: 1.5;
 }
 
 .main_grid{
@@ -11,22 +15,26 @@ body{
     margin-bottom: 5vw;
     display: grid;
     grid-template-columns: 3fr 7fr;
-    grid-gap: 10px;
+    grid-template-rows: min-content min-content;
+    grid-gap: 30px;
     grid-template-areas:
-    "grid_L grid_R";
+    "grid_L grid_R"
+    "projekty projekty";
     padding-bottom: 45px;
     border-bottom: 3px solid;
 }
 
 .grid_L{
     display: grid;
-    grid-template-rows: min-content min-content min-content min-content;
+   /*/ grid-template-rows: min-content min-content min-content min-content;/*/
     grid-gap: inherit;
     grid-template-areas:
     "pic"
     "info"
     "skills"
     "kontakt";
+    align-items: center;
+    align-content: space-between;	
 }
 
 .grid_R{
@@ -39,6 +47,26 @@ body{
     "edukacja"
 }
 
+#projekty{
+    width: 100%;
+    grid-area: projekty;
+    background: #ead2ac;
+}
+
+.grid_projekty{
+    grid-gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: min-content min-content;
+}
+
+.project_box{
+    background: #d1404065;
+    height: 300px;
+}
+
+
+
 .grid_kontakt{
     display: grid;
     width: 100%;
@@ -47,6 +75,11 @@ body{
     grid-auto-flow: row;
     justify-content: space-between;
     grid-gap: 10px;
+}
+
+.project{
+    height: 300px;
+    background: #d16060;
 }
 
 .button{
@@ -78,6 +111,7 @@ body{
     color: inherit;
 }
 
+
 .test{
     display: block;
     text-decoration: none;
@@ -95,6 +129,11 @@ body{
     z-index: 100;
 }
 
+#nav{
+    font-size:17px;
+    text-shadow: none;
+}
+
 .sticky{
   /*/  font-size: 35px !important;/*/
     position: fixed;
@@ -104,7 +143,7 @@ body{
 }
 
 .sticky + .main_grid {
-    padding-top: 85px;
+    padding-top: 105px;
 }
 
 #return{
@@ -125,21 +164,20 @@ body{
 
 
 
-
 #praca:hover{
-    background: #ffb74d !important;
+    background: #eda247 !important;
 }
 #info:hover{
-    background: #9ccc65 !important;
+    background: #bbbf48 !important;
 }
 #skills:hover{
-    background: #26a69a !important;
+    background: #d14040 !important;
 }
 #kontakt:hover{
-    background: #8E5572 !important;
+    background: #257a97 !important;
 }
 #edukacja:hover{
-    background: #afd2e9 !important;
+    background: #86ba90 !important;
 }
 /*/
 #title.yellow{
@@ -205,6 +243,7 @@ body{
 }
 
 
+
 /*/ FONTS /*/
 .nazwa{
     float: left;
@@ -215,8 +254,7 @@ body{
 
 .pozycja{
     font-size: 1.2em;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-style: italic;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .data{
@@ -275,9 +313,6 @@ body{
 }
 
 .back{
-    font-size: 16px;
-    font-family: 'Barlow', sans-serif;
-    line-height: 1.5;
     padding: 15px;
     text-align: justify;
     transition: background 0.5s;
@@ -305,7 +340,7 @@ body{
     transition: background 0.5s;
 }
 /*/
-
+/*/
 #info.permahover{
     background: #9ccc6567;
 }
@@ -321,15 +356,31 @@ body{
 #edukacja.permahover{
     background: #afd2e969;
 }
+/*/
 
+
+#info.permahover{
+    background: #bcbf65;
+}
+#kontakt.permahover{
+    background: #3f8096;
+}
+#skills.permahover{
+    background: #d16060;
+}
+#praca.permahover{
+    background: #edb26a;
+}
+#edukacja.permahover{
+    background: #a1baa6;
+}
 
 
 .heading{
-    font-size: 30px;
+    font-size: 2em;
     font-family: 'Barlow Condensed', sans-serif;
     display:block;
     text-align: center;
-
 }
 
 #title span::selection {
@@ -382,9 +433,9 @@ ul li{
 li:hover{
    /*/ box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);/*/
     box-shadow: 1px 1px 0px #eeeeee, 2px 2px 0px #eeeeee, 3px 3px 0px #eeeeee;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.1);
     transform: translate(-3px,-3px);
-    
+    user-select: none;
 }
 
 
@@ -400,7 +451,8 @@ li:hover{
         grid-template-rows: auto auto auto;
         grid-template-areas:
             "grid_L"
-            "grid_R";
+            "grid_R"
+            "projekty";
             }
 
     .grid_L{
@@ -432,7 +484,8 @@ li:hover{
         grid-template-rows: auto auto auto;
         grid-template-areas:
             "grid_L"
-            "grid_R";
+            "grid_R"
+            "projekty";
             }
 
     .grid_L{
