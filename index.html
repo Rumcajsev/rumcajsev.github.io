@@ -2,222 +2,365 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bartosz Mazurek</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700|Raleway|Barlow|Barlow+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bartosz Mazurek</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow|Barlow+Condensed|Barlow+Semi+Condensed" rel="stylesheet">
+
 
 </head>
 
 <body>
   <div id="top" style="height:5vw;"></div>
-    <div id="title">
-      <span>B</span><span>a</span><span>r</span><span>t</span><span>o</span><span>s</span><span>z</span><span> </span><span>M</span><span>a</span><span>z</span><span>u</span><span>r</span><span>e</span><span>k</span>
-      <span id="return" style="float: right;"><i class="material-icons" style="font-size: 50px">vertical_align_top</i></span> 
-    </div>
-    <div class="main_grid">
-        <div class="grid_L">
-          <div id="picture">
-              <img src="PIC.png">
+  <div id="title">
+    <span>B</span>
+    <span>a</span>
+    <span>r</span>
+    <span>t</span>
+    <span>o</span>
+    <span>s</span>
+    <span>z</span>
+    <span> </span>
+    <span>M</span>
+    <span>a</span>
+    <span>z</span>
+    <span>u</span>
+    <span>r</span>
+    <span>e</span>
+    <span>k</span>
+    <span id="nav">
+      <span id="info_num">1.Cześć</span>
+      <span id="praca_num">2.Doświadczenie</span>
+      <span id="skills_num">3.Umiejętności</span>
+      <span id="kontakt_num">4.Kontakt</span>
+      <span id="edukacja_num">5.Edukacja</span>
+    </span>
+    <span id="return" style="float: right;">
+      <i class="material-icons" style="font-size: 50px">vertical_align_top</i>
+    </span>
+  </div>
+  <div class="main_grid">
+    <div class="grid_L">
+      <div id="picture">
+        <img src="PIC.png">
+      </div>
+      <div id="info" class="back">
+        <span class="heading">Cześć</span>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et aliquet est, a tincidunt metus. Pellentesque
+          sit amet hendrerit velit. Curabitur sodales fermentum arcu, et facilisis ligula aliquam et. Vivamus commodo eros
+          sit amet euismod placerat.</p>
+      </div>
+      <div id="skills" class="back">
+        <span class="heading">Umiejętności</span>
+        <ul>
+          <li>C</li>
+          <li>Python</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>jQuery</li>
+          <li>Python</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+      <div id="kontakt" class="back">
+        <span class="heading">Kontakt</span>
+        <div class="grid_kontakt">
+
+          <div class="button mail">
+            <span style="font-size: 1.2em;">bmazurek@student.agh.edu.pl </span>
           </div>
-            <div id="info" class="back">
-                    <span class="heading">Cześć</span>
-               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et aliquet est, a tincidunt metus. Pellentesque
-                sit amet hendrerit velit. Curabitur sodales fermentum arcu, et facilisis ligula aliquam et. Vivamus commodo
-                eros sit amet euismod placerat.</p>
-            </div>
-            <div id="skills" class="back">
-                    <span class="heading">Umiejętności</span>
-                    <ul>
-                            <li>C</li>
-                            <li>Python</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>jQuery</li>
-                            <li>Python</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                        </ul>
-            </div>
-            <div id="kontakt" class="back">
-                <span class="heading">Kontakt</span>
-                
 
-                <div class="grid_kontakt">
-                    
-                
-                    
-                    <div class="button mail">
-                            <span style="font-size: 1.2em;">bmazurek@student.agh.edu.pl </span>             
-                    </div>
-            
-                    <div class="button in">
-                      <a class="test" href="">
-                            <i class="fab fa-linkedin-in"></i></a>
-                        </div>
+          <div class="button in">
+            <a class="test" href="">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
 
-                         <div class="button git">
-                            <a class="test" href="">
-                            <i class="fab fa-github"></i></a>
-                    </div>
+          <div class="button git">
+            <a class="test" href="">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
 
-                    <div class="button cv">
-                        <a class="test" href="">CV</a>
-                    </div>
+          <div class="button cv">
+            <a class="test" href="">CV</a>
+          </div>
 
-                     <div class="button X">
-                        <a class="test" href=""> 卐</a>
-                      </div>
-                </div>
-            </div>
+          <div class="button X">
+            <a class="test" href=""> 卐</a>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div class="grid_R">
-            <div id="edukacja" class="back">
-                    <span class="heading">Edukacja</span>
-                   <div class="area">
-                        <span class="nazwa">Akademia Górniczo-Hutnicza w Krakowie</span> <span class="data">2018-Obecnie</span><br>
-                            <p> <span class="pozycja">Wydział Inżynierii Mechanicznej i Robotyki</span></p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et aliquet est, a tincidunt metus. Pellentesque
-                            sit amet hendrerit velit.</p>
-                   </div>
-                   <div class="area">
-                        <span class="nazwa">I Liceum Ogólnokształcące w Zamościu</span> <span class="data">2017-2018</span><br>
-                            <p> <span class="pozycja">Product Owner</span></p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et aliquet est, a tincidunt metus. Pellentesque
-                            sit amet hendrerit velit.</p>
-            </div>
-</div>
-            <div id="praca" class="back">
-                    <span class="heading">Doświadczenie</span>
-                    <div class="area">
-                            <span class="nazwa">Fideltronik Polska</span> <span class="data">2018-Obecnie</span><br>
-                            <p> <span class="pozycja">Stażysta Automatyk</span></p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et aliquet est, a tincidunt metus. Pellentesque
-                            sit amet hendrerit velit.</p>
-                       </div>
-                       <div class="area">
-                            <span class="nazwa">Jaksiemasz.care</span> <span class="data">2018-Obecnie</span><br>
-                            <p> <span class="pozycja">Product Owner</span></p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et aliquet est, a tincidunt metus. Pellentesque
-                            sit amet hendrerit velit..</p>
-                       </div>
-                       <div class="area">
-                            <span class="nazwa">Delphi Polska</span> <span class="data">2017-2018</span><br>
-                            <p> <span class="pozycja">Koordynator DFMEA</span></p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et aliquet est, a tincidunt metus. Pellentesque
-                            sit amet hendrerit velit.</p>
-                       </div>
-                       <div class="area">
-                            <span class="nazwa">Urbicum</span> <span class="data">2015-2016</span><br>
-                            <p> <span class="pozycja">Stażysta</span></p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et aliquet est, a tincidunt metus. Pellentesque
-                            sit amet hendrerit velit.</p>
-                       </div>
+    <div class="grid_R">
+      <div id="edukacja" class="back">
+        <span class="heading">Edukacja</span>
+        <div class="area">
+          <span class="nazwa">Akademia Górniczo-Hutnicza w Krakowie</span>
+          <span class="data">2018-Obecnie</span>
+          <br>
+          <p>
+            <span class="pozycja">Wydział Inżynierii Mechanicznej i Robotyki</span>
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et aliquet est, a tincidunt metus. Pellentesque
+            sit amet hendrerit velit.</p>
         </div>
+        <div class="area">
+          <span class="nazwa">I Liceum Ogólnokształcące w Zamościu</span>
+          <span class="data">2017-2018</span>
+          <br>
+          <p>
+            <span class="pozycja">Product Owner</span>
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et aliquet est, a tincidunt metus. Pellentesque
+            sit amet hendrerit velit.</p>
+        </div>
+      </div>
+      <div id="praca" class="back">
+        <span class="heading">Doświadczenie</span>
+        <div class="area">
+          <span class="nazwa">Fideltronik Polska</span>
+          <span class="data">2018-Obecnie</span>
+          <br>
+          <p>
+            <span class="pozycja">Stażysta Automatyk</span>
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et aliquet est, a tincidunt metus. Pellentesque
+            sit amet hendrerit velit.</p>
+        </div>
+        <div class="area">
+          <span class="nazwa">Jaksiemasz.care</span>
+          <span class="data">2018-Obecnie</span>
+          <br>
+          <p>
+            <span class="pozycja">Product Owner</span>
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et aliquet est, a tincidunt metus. Pellentesque
+            sit amet hendrerit velit..</p>
+        </div>
+        <div class="area">
+          <span class="nazwa">Delphi Polska</span>
+          <span class="data">2017-2018</span>
+          <br>
+          <p>
+            <span class="pozycja">Koordynator DFMEA</span>
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et aliquet est, a tincidunt metus. Pellentesque
+            sit amet hendrerit velit.</p>
+        </div>
+        <div class="area">
+          <span class="nazwa">Urbicum</span>
+          <span class="data">2015-2016</span>
+          <br>
+          <p>
+            <span class="pozycja">Stażysta</span>
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et aliquet est, a tincidunt metus. Pellentesque
+            sit amet hendrerit velit.</p>
+        </div>
+      </div>
+
 
 
 
 
     </div>
+    <div id="projekty">
+      <span class="heading">Projekty</span>
+      <div class="grid_projekty back">
+
+        <div class="project_box area"></div>
+        <div class="project_box area"></div>
+        <div class="project_box area"></div>
+        <div class="project_box area"></div>
+        <div class="project_box area"></div>
+        <div class="project_box area"></div>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 
 <script>
 
-  $(document).ready(function(){
-    $('#return').hide();
-  });
+  $(function () {
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop();
+      var os = $('#info').offset().top;
+      var ht = $('#info').height();
+      if (scroll > os + ht) {
+        $('#info_num').show();
+      }
+      else {
+        $("#info_num").hide();
+      }
+    });
 
-  $('#return').click(function(){
-        $("html, body").animate({ scrollTop: 0 }, 500);
-        return false;
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop();
+      var os = $('#praca').offset().top;
+      var ht = $('#praca').height();
+      if (scroll > os + ht) {
+        $('#praca_num').show();
+      }
+      else {
+        $("#praca_num").hide();
+      }
+    });
+
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop();
+      var os = $('#skills').offset().top;
+      var ht = $('#skills').height();
+      if (scroll > os + ht) {
+        $('#skills_num').show();
+      }
+      else {
+        $("#skills_num").hide();
+      }
+    });
+
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop();
+      var os = $('#kontakt').offset().top;
+      var ht = $('#kontakt').height();
+      if (scroll > os + ht) {
+        $('#kontakt_num').show();
+      }
+      else {
+        $("#kontakt_num").hide();
+      }
+    });
+
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop();
+      var os = $('#edukacja').offset().top;
+      var ht = $('#edukacja').height();
+      if (scroll > os + ht) {
+        $('#edukacja_num').show();
+      }
+      else {
+        $("#edukacja_num").hide();
+      }
     });
 
 
-  $(window).scroll(function(){
-    if ($(window).scrollTop() >= 400){
-       $('#return').slideDown();
+
+
+
+
+  });
+
+
+
+
+
+
+
+
+
+
+
+  $(document).ready(function () {
+    $('#return').hide();
+  });
+
+  $('#return').click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 500);
+    return false;
+  });
+
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() >= 400) {
+      $('#return').slideDown();
     }
     else {
-       $('#return').fadeOut();
+      $('#return').fadeOut();
     }
-});
+  });
 
 
 
-  $(window).scroll(function(){
-    if ($(window).scrollTop() >= ($(window).width())*0.05) {
-       $('#title').addClass('sticky');
+  $(window).scroll(function () {
+    if ($(window).scrollTop() >= ($(window).width()) * 0.05) {
+      $('#title').addClass('sticky');
     }
     else {
-       $('#title').removeClass('sticky');
+      $('#title').removeClass('sticky');
     }
-});
+  });
 
-$("#info").mouseenter(function() {
-  $("#info").addClass('permahover');
-});
+  $("#info").mouseenter(function () {
+    $("#info").addClass('permahover');
+  });
 
-$("#kontakt").mouseenter(function() {
-  $("#kontakt").addClass('permahover');
-  $(".button").addClass('permahover');
-});
+  $("#kontakt").mouseenter(function () {
+    $("#kontakt").addClass('permahover');
+    $(".button").addClass('permahover');
+  });
 
-$("#skills").mouseenter(function() {
-  $("#skills").addClass('permahover');
-});
+  $("#skills").mouseenter(function () {
+    $("#skills").addClass('permahover');
+  });
 
-$("#praca").mouseenter(function() {
-  $("#praca").addClass('permahover');
+  $("#praca").mouseenter(function () {
+    $("#praca").addClass('permahover');
 
-});
+  });
 
-$("#edukacja").mouseenter(function() {
-  $("#edukacja").addClass('permahover');
-});
+  $("#edukacja").mouseenter(function () {
+    $("#edukacja").addClass('permahover');
+  });
 
-$("#title").mouseenter(function() {
-  $("#title").addClass('permahover');
-});
+  $("#title").mouseenter(function () {
+    $("#title").addClass('permahover');
+  });
 
 
 
-$("#info").mouseenter(
-    function() {
-  $("#title").css("text-shadow","1px 1px 0px #9ccc65, 2px 2px 0px #9ccc65, 3px 3px 0px #9ccc65"),
-  $("#picture").css("background","#9ccc65")}
+  $("#info").mouseenter(
+    function () {
+      $("#title").css("text-shadow", "1px 1px 0px #bbbf48, 2px 2px 0px #bbbf48, 3px 3px 0px #bbbf48"),
+        $("#picture").css("background", "#bbbf48")    
+}
   );
 
-$("#skills").mouseenter(
-    function() {
-  $("#title").css("text-shadow","1px 1px 0px #26a69a, 2px 2px 0px #26a69a, 3px 3px 0px #26a69a"),
-  $("#picture").css("background","#26a69960")}
+  $("#skills").mouseenter(
+    function () {
+      $("#title").css("text-shadow", "1px 1px 0px #d14040, 2px 2px 0px #d14040, 3px 3px 0px #d14040"),
+        $("#picture").css("background", "#d14040")    
+}
   );
 
-$("#kontakt").mouseenter(
-    function() {
-  $("#title").css("text-shadow","1px 1px 0px #e57373, 2px 2px 0px #e57373, 3px 3px 0px #e57373"),
-  $("#picture").css("background","#8f2d5663")}
+  $("#kontakt").mouseenter(
+    function () {
+      $("#title").css("text-shadow", "1px 1px 0px #257a97, 2px 2px 0px #257a97, 3px 3px 0px #257a97"),
+        $("#picture").css("background", "#257a97")
+    }
   );
 
-$("#praca").mouseenter(
-    function() {
-  $("#title").css("text-shadow","1px 1px 0px #ffb74d, 2px 2px 0px #ffb74d, 3px 3px 0px #ffb74d"),
-  $("#picture").css("background","#ffb84d4d")}
+  $("#praca").mouseenter(
+    function () {
+      $("#title").css("text-shadow", "1px 1px 0px #eda247, 2px 2px 0px #eda247, 3px 3px 0px #eda247"),
+        $("#picture").css("background", "#eda247")
+    }
   );
-  
 
-$("#edukacja").mouseenter(
-    function() {
-  $("#title").css("text-shadow","1px 1px 0px #afd2e9, 2px 2px 0px #afd2e9, 3px 3px 0px #afd2e9"),
-  $("#picture").css("background","#afd2e9")}
+
+  $("#edukacja").mouseenter(
+    function () {
+      $("#title").css("text-shadow", "1px 1px 0px #86ba90, 2px 2px 0px #86ba90, 3px 3px 0px #86ba90"),
+        $("#picture").css("background", "#86ba90")
+    }
   );
 
 </script>
