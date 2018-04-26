@@ -8,6 +8,16 @@ body{
     line-height: 1.5;
 }
 
+
+
+#floater{
+    z-index: 200;
+    padding: 10px;
+    position: absolute;
+    background: grey;
+    box-shadow: 1px 1px 0px #eeeeee, 2px 2px 0px #eeeeee, 3px 3px 0px #eeeeee;
+}
+
 .main_grid{
     width: 60%;
     margin: 0 auto;
@@ -50,19 +60,23 @@ body{
 #projekty{
     width: 100%;
     grid-area: projekty;
-    background: #ead2ac;
+    background: #7D82B8;
 }
 
 .grid_projekty{
+    padding: 20px;
+    width: 1fr;
     grid-gap: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: min-content min-content;
+    grid-template-columns: repeat(auto-fill, 250px);
+    justify-content: space-evenly;	
 }
 
 .project_box{
-    background: #d1404065;
-    height: 300px;
+    background: rgba(0, 0, 0, 0.05);
+    height: 350px;
+    width: 100%;
+    transition: all 0.2s;
 }
 
 
@@ -99,18 +113,17 @@ body{
     width: 100%;
 }
 
-.button:hover{
+/* .button:hover{
     box-shadow: 1px 1px 0px #eeeeee, 2px 2px 0px #eeeeee, 3px 3px 0px #eeeeee;
     background: rgba(255, 255, 255, 0.05);
     transform: translate(-3px,-3px);
-}
+} */
 
 .grid_kontakt a{
     height: 100%;
     width: 100%;
     color: inherit;
 }
-
 
 .test{
     display: block;
@@ -127,6 +140,7 @@ body{
     border-bottom: 3px solid;
     font-weight: 300;
     z-index: 100;
+    line-height: 1.2;
 }
 
 #nav{
@@ -135,7 +149,6 @@ body{
 }
 
 .sticky{
-  /*/  font-size: 35px !important;/*/
     position: fixed;
     top: 0;
     left: 50%;
@@ -143,7 +156,7 @@ body{
 }
 
 .sticky + .main_grid {
-    padding-top: 105px;
+    padding-top: 85px;
 }
 
 #return{
@@ -155,15 +168,16 @@ body{
     -ms-user-select: none;
     user-select: none;
     cursor: pointer;
+    text-shadow: none;
 }
 #return:hover{
     transform: translate(-3px,-3px);
-    background: #dddddd;
-    box-shadow: 1px 1px 0px black, 2px 2px 0px black, 3px 3px 0px black;
+    /* background: #dddddd; */
+    text-shadow: 1px 1px 0px black, 2px 2px 0px black, 3px 3px 0px black;
 }
 
 
-
+/* KOLORY HOVER */
 #praca:hover{
     background: #eda247 !important;
 }
@@ -179,23 +193,9 @@ body{
 #edukacja:hover{
     background: #86ba90 !important;
 }
-/*/
-#title.yellow{
-    text-shadow: 1px 1px 0px #ffb74d, 2px 2px 0px #ffb74d, 3px 3px 0px #ffb74d !important;
-}
-#title.green{
-    text-shadow: 1px 1px 0px #9ccc65, 2px 2px 0px #9ccc65, 3px 3px 0px #9ccc65 !important;
-}
-#title.magenta{
-    text-shadow: 1px 1px 0px #26a69a, 2px 2px 0px #26a69a, 3px 3px 0px #26a69a !important;
-}
-#title.red{
-    text-shadow: 1px 1px 0px #e57373, 2px 2px 0px #e57373, 3px 3px 0px #e57373 !important;
-}
-#title.blue{
-    text-shadow: 1px 1px 0px #757de8, 2px 2px 0px #757de8, 3px 3px 0px #757de8 !important;
-}
-/*/
+
+
+/* ANIMACJA TEKSTU HEADERA */
 #title span:nth-child(2){
     transition: text-shadow 0s ease .05s;
 }
@@ -269,9 +269,10 @@ body{
     padding: 10px;
     transition: 0.2s;
     margin-top:10px;
+    
 }
 
-.area:hover{
+.hover:hover{
     box-shadow: 1px 1px 0px #eeeeee, 2px 2px 0px #eeeeee, 3px 3px 0px #eeeeee;
     background: rgba(255, 255, 255, 0.2);
     transform: translate(-3px,-3px);
@@ -318,47 +319,8 @@ body{
     transition: background 0.5s;
     align-self: start;
 }
-/*/
-#info:hover{
-    outline: 5px solid #9ccc65;
-    outline-offset: -5px;
-    transition: background 0.5s;
-}
-#kontakt:hover{
-    outline: 5px solid #757de8;
-    outline-offset: -5px;
-    transition: background 0.5s;
-}
-#praca:hover{
-    outline: 5px solid #c79a00;
-    outline-offset: -5px;
-    transition: background 0.5s;
-}
-#edukacja:hover{
-    outline: 5px solid #c79a00;
-    outline-offset: -5px;
-    transition: background 0.5s;
-}
-/*/
-/*/
-#info.permahover{
-    background: #9ccc6567;
-}
-#kontakt.permahover{
-    background: #8f2d5663;
-}
-#skills.permahover{
-    background: #26a69960;
-}
-#praca.permahover{
-    background: #ffb84d4d;
-}
-#edukacja.permahover{
-    background: #afd2e969;
-}
-/*/
 
-
+/* KOLORY  */
 #info.permahover{
     background: #bcbf65;
 }
@@ -382,6 +344,8 @@ body{
     display:block;
     text-align: center;
 }
+
+/* KOLOR ZAZNACZENIA TEKSTU */
 
 #title span::selection {
     background: rgb(148, 148, 148); /* WebKit/Blink Browsers */
