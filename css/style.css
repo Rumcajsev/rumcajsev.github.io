@@ -1,472 +1,75 @@
+* { margin: 0;
+   padding: 0 
+}
+
+
 body{
-    margin: 0px;
-    padding: 0px;
-    background: #eeeeee;
-    color: #0e0e0e;
-    font-size: 17px;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    line-height: 1.5;
+  background: #f8f8f8;
+}
+  
+::selection {
+    background: #ffcf87; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ffcf87; /* Gecko Browsers */
 }
 
 
-
-#floater{
-    z-index: 200;
-    padding: 10px;
-    position: absolute;
-    background: grey;
-    box-shadow: 1px 1px 0px #eeeeee, 2px 2px 0px #eeeeee, 3px 3px 0px #eeeeee;
-}
-
-.main_grid{
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 5vw;
-    margin-bottom: 5vw;
-    display: grid;
-    grid-template-columns: 3fr 7fr;
-    grid-template-rows: min-content min-content;
-    grid-gap: 30px;
-    grid-template-areas:
-    "grid_L grid_R"
-    "projekty projekty";
-    padding-bottom: 45px;
-    border-bottom: 3px solid;
-}
-
-.grid_L{
-    display: grid;
-   /*/ grid-template-rows: min-content min-content min-content min-content;/*/
-    grid-gap: inherit;
-    grid-template-areas:
-    "pic"
-    "info"
-    "skills"
-    "kontakt";
-    align-items: center;
-    align-content: space-between;	
-}
-
-.grid_R{
-    display: grid;
-    width: 100%;
-    grid-template-rows: min-content min-content;
-    grid-gap: inherit;
-    grid-template-areas:
-    "praca"   
-    "edukacja"
-}
-
-#projekty{
-    width: 100%;
-    grid-area: projekty;
-    background: #7D82B8;
-}
-
-.grid_projekty{
-    padding: 20px;
-    width: 1fr;
-    grid-gap: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 250px);
-    justify-content: space-evenly;	
-}
-
-.project_box{
-    background: rgba(0, 0, 0, 0.05);
-    height: 350px;
-    width: 100%;
-    transition: all 0.2s;
-}
-
-
-
-.grid_kontakt{
-    display: grid;
-    width: 100%;
-    grid-template-columns: 60px 60px 60px 60px;
-    grid-template-rows: 60px 60px;
-    grid-auto-flow: row;
-    justify-content: space-between;
-    grid-gap: 10px;
-}
-
-.project{
-    height: 300px;
-    background: #d16060;
-}
-
-.button{
- width: 60px;
- text-align: center;
- vertical-align: middle;
- line-height: 60px; 
- font-size: 2em;
- background: rgba(0, 0, 0, 0.05);
- transition: all 0.2s;
-}
-
-.button.mail{
-    grid-column: 1/5;
-    grid-row: 1;  
-    font-size: 15px;
-    width: 100%;
-}
-
-/* .button:hover{
-    box-shadow: 1px 1px 0px #eeeeee, 2px 2px 0px #eeeeee, 3px 3px 0px #eeeeee;
-    background: rgba(255, 255, 255, 0.05);
-    transform: translate(-3px,-3px);
-} */
-
-.grid_kontakt a{
-    height: 100%;
-    width: 100%;
-    color: inherit;
-}
-
-.test{
-    display: block;
-    text-decoration: none;
-}
-
-#title{
-    background: #eeeeee;
-    margin: 0 auto;
-    width: 65%;
-    height: auto;
-    font-size: 70px;
-    font-family: 'Barlow Condensed', sans-serif;
-    border-bottom: 3px solid;
-    font-weight: 300;
-    z-index: 100;
-    line-height: 1.2;
-}
-
-#nav{
-    font-size:17px;
-    text-shadow: none;
-}
-
-.sticky{
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.sticky + .main_grid {
-    padding-top: 85px;
-}
-
-#return{
-    transition:  0.2s !important;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    cursor: pointer;
-    text-shadow: none;
-}
-#return:hover{
-    transform: translate(-3px,-3px);
-    /* background: #dddddd; */
-    text-shadow: 1px 1px 0px black, 2px 2px 0px black, 3px 3px 0px black;
-}
-
-
-/* KOLORY HOVER */
-#praca:hover{
-    background: #eda247 !important;
-}
-#info:hover{
-    background: #bbbf48 !important;
-}
-#skills:hover{
-    background: #d14040 !important;
-}
-#kontakt:hover{
-    background: #257a97 !important;
-}
-#edukacja:hover{
-    background: #86ba90 !important;
-}
-
-
-/* ANIMACJA TEKSTU HEADERA */
-#title span:nth-child(2){
-    transition: text-shadow 0s ease .05s;
-}
-#title span:nth-child(3){
-    transition: text-shadow 0s ease .1s;
-}
-#title span:nth-child(4){
-    transition: text-shadow 0s ease .15s;
-}
-#title span:nth-child(5){
-    transition: text-shadow 0s ease .2s;
-}
-#title span:nth-child(6){
-    transition: text-shadow 0s ease .25s;
-}
-#title span:nth-child(7){
-    transition: text-shadow 0s ease .3s;
-}
-#title span:nth-child(8){
-    transition: text-shadow 0s ease .35s;
-}
-#title span:nth-child(9){
-    transition: text-shadow 0s ease .4s;
-}
-#title span:nth-child(10){
-    transition: text-shadow 0s ease .45s;
-}
-#title span:nth-child(11){
-    transition: text-shadow 0s ease .5s;
-}
-#title span:nth-child(12){
-    transition: text-shadow 0s ease .55s;
-}
-#title span:nth-child(13){
-    transition: text-shadow 0s ease .6s;
-}
-#title span:nth-child(14){
-    transition: text-shadow 0s ease .65s;
-}
-#title span:nth-child(15){
-    transition: text-shadow 0s ease .7s;
-}
-#title span:nth-child(16){
-    transition: text-shadow 0s ease .75s;
-}
-
-
-
-/*/ FONTS /*/
-.nazwa{
-    float: left;
-    font-size: 1.5em;
-    font-family: 'Barlow Condensed', sans-serif;
-    display: inline;
-}
-
-.pozycja{
-    font-size: 1.2em;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-}
-
-.data{
-    float: right;
-    font-size: 1em;
-    font-family: 'Barlow Condensed', sans-serif;
-    /*/font-style: italic;/*/
-    display: inline;
-}
-
-.area{
-    padding: 10px;
-    transition: 0.2s;
-    margin-top:10px;
-    
-}
-
-.hover:hover{
-    box-shadow: 1px 1px 0px #eeeeee, 2px 2px 0px #eeeeee, 3px 3px 0px #eeeeee;
-    background: rgba(255, 255, 255, 0.2);
-    transform: translate(-3px,-3px);
-}
-
-#picture{
-    grid-area: pic;
-    transition: 0.5s;
-}
-
-#picture img{
-    opacity: 0.6;
-    max-width:100%;
-    mix-blend-mode: multiply;
-}
-
-#picture:hover{
-    opacity: 1;
-}
-
-#kontakt{
-    grid-area: kontakt;
-}
 
 #info{
-    grid-area: info;
+  grid-area: info;
+  width: 225px;
+  font-family: 'Barlow Condensed', sans-serif;
+  margin: 10vh auto;
+  color: #2e2e2e;
 }
 
-#edukacja{
-    grid-area: edukacja;
+#info a{
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.2s;
 }
 
-#praca{
-    grid-area: praca;
+#info a:hover{
+  color: #fdbf5b;
 }
 
-#skills{
-    grid-area: skills;
-}
-
-.back{
-    padding: 15px;
-    text-align: justify;
-    transition: background 0.5s;
-    align-self: start;
-}
-
-/* KOLORY  */
-#info.permahover{
-    background: #bcbf65;
-}
-#kontakt.permahover{
-    background: #3f8096;
-}
-#skills.permahover{
-    background: #d16060;
-}
-#praca.permahover{
-    background: #edb26a;
-}
-#edukacja.permahover{
-    background: #a1baa6;
-}
-
-
-.heading{
-    font-size: 2em;
-    font-family: 'Barlow Condensed', sans-serif;
-    display:block;
-    text-align: center;
-}
-
-/* KOLOR ZAZNACZENIA TEKSTU */
-
-#title span::selection {
-    background: rgb(148, 148, 148); /* WebKit/Blink Browsers */
-}
-#title::-moz-selection {
-    background: rgb(148, 148, 148); /* Gecko Browsers */
-}
-#info *::selection {
-    background: #6b9b37; /* WebKit/Blink Browsers */
-}
-#info *::-moz-selection {
-    background: #6b9b37; /* Gecko Browsers */
-}
-#kontakt *::selection {
-    background: #fff2a8; /* WebKit/Blink Browsers */
-}
-#kontakt *::-moz-selection {
-    background: #fff2a8; /* Gecko Browsers */
-}
-#praca *::selection {
-    background: #ffffff4b; /* WebKit/Blink Browsers */
-}
-#praca *::-moz-selection {
-    background: #ffffff4b; /* Gecko Browsers */
-}
-#edukacja *::selection {
-    background: #ffffff4b; /* WebKit/Blink Browsers */
-}
-#edukacja *::-moz-selection {
-    background: #ffffff4b; /* Gecko Browsers */
-}
-
-ul{
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-    max-width: 800px;
-}  
-
-ul li{
-    display: inline-block;
-    margin: 7px;
-    padding: 5px 10px;
-    list-style: none;
-    background: rgba(0, 0, 0, 0.05);
-    transition: 0.2s;
-}
-
-li:hover{
-   /*/ box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);/*/
-    box-shadow: 1px 1px 0px #eeeeee, 2px 2px 0px #eeeeee, 3px 3px 0px #eeeeee;
-    background: rgba(255, 255, 255, 0.1);
-    transform: translate(-3px,-3px);
-    user-select: none;
+hr{
+  background: #063802;
+  border: 0;
+  height: 2px;
+  margin: 15px auto;
+  width: 100px;
 }
 
 
 
-
-@media only screen and (max-width: 1024px) {
-    #title{
-        width: 85%;
-    }
-    .main_grid{
-        width: 85%;
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto;
-        grid-template-areas:
-            "grid_L"
-            "grid_R"
-            "projekty";
-            }
-
-    .grid_L{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto;
-        grid-template-areas:
-            "pic info"
-            "pic kontakt"
-            "skills skills";
-    }
-
-    .grid_R{
-        grid-template-columns: 100%;
-        grid-template-rows: min-content min-content;
-        grid-template-areas:
-            "praca"
-            "edukacja";
-    }
-
+h1{
+  font-size: 45px;
+  line-height: 100%;
+  text-align: center;
+  font-weight: 400;
+  color: #063802;
 }
 
-@media only screen and (max-width: 600px) {
-    #title{
-        width: 95%;
-    }
-    .main_grid{
-        width: 95%;
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto;
-        grid-template-areas:
-            "grid_L"
-            "grid_R"
-            "projekty";
-            }
-
-    .grid_L{
-        grid-template-columns: auto auto;
-        grid-template-rows: min-content min-content min-content;
-        grid-template-areas:
-            "pic info"
-            "kontakt kontakt"
-            "skills skills";
-    }
-
-    .grid_R{
-        grid-template-columns: 100%;
-        grid-template-rows: min-content min-content;
-        grid-template-areas:
-            "praca"
-            "edukacja";
-    }
-
+h2{
+  font-size: 20px;
+  line-height: 100%;
+  text-align: center;
+  font-weight: 500;
 }
+
+
+h3{
+  font-size: 20px;
+  line-height: 100%;
+  text-align: center;
+  font-weight: 300;
+}
+
+p{
+  font-size: 16px;
+  text-align: justify;
+}
+
+
