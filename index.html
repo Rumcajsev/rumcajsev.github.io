@@ -21,7 +21,9 @@
 <body>
 
   <div id="info">
+    <div id="rightborder"></div>
     <div id="topborder"></div>
+    <div id="bottomborder"></div>
       <div id="content">
         <h1 style="letter-spacing: 1.2px;">BARTOSZ</h1> 
         <h1>MAZUREK</h1>
@@ -45,3 +47,14 @@
 
   </body>
 </html>
+
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").slideToggle();
+    });
+});
+
+
+</script>
