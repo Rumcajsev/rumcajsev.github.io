@@ -18,7 +18,7 @@ body{
 @keyframes border_roll_top{
   0%{width: 0;height: 0;opacity:0;}
   10%{opacity: 100;}
-  50%{width: 242px;height: 0;}
+  35%{width: 242px;height: 0;}
   100%{width: 242px;height: 100%;}
 }
 
@@ -41,7 +41,7 @@ body{
   height: 100%;
   animation-name: border_roll_top;
   animation-delay: 1s;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-timing-function: ease-in;
   animation-fill-mode: both;
 }
@@ -54,7 +54,7 @@ body{
   height: 100%;
   /* z-index: 10; */
   animation-name: border_roll_bottom;
-  animation-delay: 2s;
+  animation-delay: 2.5s;
   animation-duration: 0.5s;
   animation-timing-function: linear;
   animation-fill-mode: both;
@@ -68,8 +68,8 @@ body{
   height: 362px;
   z-index: 10;
   animation-name: border_roll_right;
-  animation-delay: 2.5s;
-  animation-duration: 0.5s;
+  animation-delay: 3s;
+  animation-duration: 1s;
   animation-timing-function: ease-out;
   animation-fill-mode: both;
 }
