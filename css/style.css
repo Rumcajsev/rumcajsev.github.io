@@ -8,10 +8,10 @@ body{
 }
   
 ::selection {
-    background: #ffcf87; /* WebKit/Blink Browsers */
+    background: #ffd966; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #ffcf87; /* Gecko Browsers */
+  background: #ffd966; /* Gecko Browsers */
 }
 
 
@@ -38,5 +38,5 @@ a{
 }
 
 a:hover{
-  background: #ffcf87;
+  background: #ffd966;
 }
