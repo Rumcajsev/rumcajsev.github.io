@@ -25,22 +25,14 @@ width:100vw;
 
 
 h1{
-  
-
-    font-family: 'Dosis', sans-serif;
-
-
+  font-family: 'Barlow Semi Condensed';
   font-size: 6vw;
   letter-spacing: 0.3vw;
 
 }
 
 h2{
-  
-
-    font-family: 'Dosis', sans-serif;
-
-
+  font-family: 'Barlow Semi Condensed';
   font-weight: 500;
   font-size: 3vw;
 }
